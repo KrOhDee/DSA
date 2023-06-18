@@ -70,9 +70,7 @@ class LinkedList:
         return removed_node
     
     def get(self, index):
-        if self.length == 0:
-            return None
-        elif index < 0 or index >= self.length:
+        if index < 0 or index >= self.length:
             return None
         else: 
             indexes = 0
