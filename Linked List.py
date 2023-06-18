@@ -68,6 +68,20 @@ class LinkedList:
             self.head = self.head.next
             self.length -= 1
         return removed_node
-
+    
+    def get(self, index):
+        if self.length == 0:
+            return None
+        elif index >= self.length:
+            return None
+        else: 
+            indexes = 0
+            current = self.head
+            while current:  
+                if indexes == index:
+                    return current
+                indexes += 1
+                current = current.next
+        return None
 
     
