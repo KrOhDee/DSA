@@ -72,7 +72,7 @@ class LinkedList:
     def get(self, index):
         if self.length == 0:
             return None
-        elif index >= self.length:
+        elif index < 0 or index >= self.length:
             return None
         else: 
             indexes = 0
